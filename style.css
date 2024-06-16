@@ -1,0 +1,229 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color: hsl(234, 29%, 20%);
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.successPage {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 640px;
+  width: 920px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  /* padding: 20px; */
+  border: none;
+  background-color: white;
+  border-radius: 40px;
+  margin: 25px;
+  margin-bottom: 0px;
+}
+
+.contentDiv {
+  padding: 15px;
+}
+
+.svgDiv {
+  /* padding: 15px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fff {
+  margin-right: -25px;
+  margin-top: 2.5px;
+}
+
+#Main {
+  font-size: 60px;
+  font-weight: 900;
+  color: hsl(234, 29%, 20%);
+  margin: 25px;
+  margin-top: 75px;
+}
+
+#main {
+  font-size: 16px;
+  font-weight: 550;
+  color: hsl(234, 29%, 20%);
+  margin: 25px;
+}
+
+.checklist {
+  width: 100%;
+  height: max-content;
+  margin: 25px;
+}
+
+/* ul{
+	list-style: none;
+}
+
+ul li{
+	padding-left: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+ul li::before {
+	content: '';
+	width: 21px;
+	height: 21px;
+	background-repeat: no-repeat;
+	background-image: url("assets/images/icon-list.svg");
+} */
+
+ul {
+  list-style: none;
+  /* Remove default bullets */
+  padding-left: 0;
+  /* Remove default padding */
+}
+
+ul li {
+  position: relative;
+  /* Position relative for absolute positioning of the pseudo-element */
+  padding-left: 35px;
+  /* Add padding to make space for the icon */
+  font-weight: 550;
+  margin-bottom: 15px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  /* Absolute positioning */
+  left: 0;
+  /* Position it to the left of the list item */
+  top: 50%;
+  /* Center it vertically */
+  transform: translateY(-50%);
+  /* Adjust for vertical centering */
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-image: url("assets/images/icon-list.svg");
+}
+
+.inputField,
+.subsButton {
+  margin: 25px;
+  width: 100%;
+}
+
+#email {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+
+input,
+#submit {
+  width: 90%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#submit {
+  font-size: 16px;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+}
+
+#submit:hover {
+  background: linear-gradient(90deg, #ff527b, #ff6a3a);
+  cursor: pointer;
+}
+#dismiss:hover {
+  background: linear-gradient(90deg, #ff527b, #ff6a3a);
+  cursor: pointer;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.successMessage {
+  background-color: white;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  border-radius: 40px;
+  margin: 0px;
+}
+
+#ddd {
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+}
+
+#Rain {
+  font-size: 60px;
+  font-weight: 900;
+  color: hsl(234, 29%, 20%);
+  margin: 20px;
+  margin-left: 60px;
+}
+
+#rain {
+  font-size: 18px;
+  padding-right: 30px;
+  font-weight: 550;
+  color: hsl(234, 29%, 20%);
+  margin: 25px;
+  margin-left: 60px;
+}
+
+#high {
+  font-weight: 600;
+}
+
+#dismiss {
+  font-size: 16px;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  margin-left: 60px;
+  width: 75%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#error {
+  color: hsl(4, 100%, 67%);
+  margin-left: 175px;
+  font-size: 14px;
+  visibility: hidden;
+}
+
+#emails:focus {
+  background-color: white;
+}
